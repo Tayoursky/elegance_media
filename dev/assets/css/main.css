@@ -353,3 +353,72 @@ section {
   background-color: #fff600;
   height: 5px;
 }
+.search_bg {
+  background-color: #1f1f1f;
+  height: 56px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.search {
+  float: left;
+  padding: 15px 0;
+}
+.search_form {
+  display: inline-block;
+}
+.search_title {
+  color: #f1f1f1;
+  ont-size: 15px;
+  padding-right: 5px;
+}
+.search_text {
+  font-size: 12px;
+  line-height: 2em;
+  width: 225px;
+  vertical-align: middle;
+  padding: 0 5px;
+  border: none;
+  outline: none;
+}
+.search_text::-webkit-input-placeholder {
+  color: #50504f !important;
+}
+.search_text:-moz-placeholder {
+  color: #50504f !important;
+}
+.search_text::-moz-placeholder {
+  color: #50504f !important;
+}
+.search_text:-ms-input-placeholder {
+  color: #50504f !important;
+}
+.search_submit {
+  color: #010100;
+  font-size: 12px;
+  margin-left: 1px;
+  line-height: 1.9em;
+  vertical-align: middle;
+  background-color: #fff600;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.twitter {
+  float: right;
+  line-height: 55px;
+}
+.twitter_icon {
+  vertical-align: middle;
+  padding-right: 7px;
+}
+.twitter_text {
+  color: #f1f1f1;
+  font-size: 11px;
+  padding-right: 12px;
+}
+.twitter_link {
+  color: #fff600;
+  text-decoration: underline;
+}
