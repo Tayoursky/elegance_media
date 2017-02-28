@@ -1,0 +1,18 @@
+placeholder-color(color)
+	&::-webkit-input-placeholder
+		color color !important
+	&:-moz-placeholder  /* Firefox 18- */
+		color color !important
+	&::-moz-placeholder  /* Firefox 19+ */
+		color color !important
+	&:-ms-input-placeholder  
+		color color !important
+cf()
+	&:after
+		display table
+		content ""
+		clear both
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments 
