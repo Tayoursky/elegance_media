@@ -15,6 +15,17 @@
 	.logo a span{
 		display: none;
 	}
+	.article{
+	width: 50% !important;
+	padding: 0 !important;
+	margin-bottom: 25px;
+	
+	}
+	.article:nth-child(even){
+		clear: both;
+	padding: 0 15px 0 0  !important;
+	}
+	
 }
 @media only screen and (max-width : 800px) {
 	.header_nav{
@@ -47,7 +58,7 @@
 @media only screen and (max-width : 650px) {
 	 
 .next_button{
-	left: 7px !important;
+	left: 0px !important;
 	background-color rgba(#fff, 0.5)
 	height 60px !important;
 	width 32px !important;
@@ -67,6 +78,11 @@
 	width 32px !important;
 	border-radius 20px
 	z-index 1
+	}
+	.article{
+	width: 100% !important;
+	margin-bottom: 25px;
+	
 	}
 			
 }

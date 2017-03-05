@@ -191,6 +191,15 @@ section {
   .logo a span {
     display: none;
   }
+  .article {
+    width: 50% !important;
+    padding: 0 !important;
+    margin-bottom: 25px;
+  }
+  .article:nth-child(even) {
+    clear: both;
+    padding: 0 15px 0 0 !important;
+  }
 }
 @media only screen and (max-width: 800px) {
   .header_nav {
@@ -217,7 +226,7 @@ section {
 }
 @media only screen and (max-width: 650px) {
   .next_button {
-    left: 7px !important;
+    left: 0px !important;
     background-color: rgba(255,255,255,0.5);
     height: 60px !important;
     width: 32px !important;
@@ -246,6 +255,10 @@ section {
     border-radius: 20px;
     z-index: 1;
   }
+  .article {
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
 }
 @media only screen and (min-width: 800px) {
   .header_nav ul {
@@ -262,8 +275,11 @@ section {
 }
 .header:after {
   display: table;
-  content: "";
+  content: " ";
   clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 .wrapper {
   width: 960px;
@@ -328,7 +344,6 @@ section {
 .slider_container {
   padding-top: 20px;
   position: relative;
-  padding-left: 8px;
   padding-bottom: 45px;
 }
 .next_button,
@@ -366,8 +381,11 @@ section {
 }
 .container_articale:after {
   display: table;
-  content: "";
+  content: " ";
   clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 .btn_wrapper {
   text-align: center;
@@ -393,7 +411,7 @@ section {
   padding-bottom: 15px;
 }
 .article {
-  width: 240px;
+  width: 25%;
   float: left;
   padding-right: 40px;
 }
@@ -408,7 +426,6 @@ section {
   padding-right: 0;
 }
 .articale_icon {
-  display: block;
   float: left;
 }
 .articale_title {
@@ -426,8 +443,11 @@ section {
 }
 .blog_bg:after {
   display: table;
-  content: "";
+  content: " ";
   clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 .blog_bg p {
   color: #50504f;
@@ -571,8 +591,11 @@ section {
 }
 .footer:after {
   display: table;
-  content: "";
+  content: " ";
   clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 .footer_title {
   color: #fff;
