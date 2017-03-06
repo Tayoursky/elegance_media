@@ -187,6 +187,13 @@ nav,
 section {
   display: block;
 }
+@media only screen and (max-width: 992px) {
+  .search,
+  .twitter {
+    width: 100% !important;
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 850px) {
   .logo a span {
     display: none;
@@ -199,6 +206,17 @@ section {
   .article:nth-child(even) {
     clear: both;
     padding: 0 15px 0 0 !important;
+  }
+  .company {
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+  .testimonials {
+    width: 50% !important;
+    padding-right: 30px !important;
+  }
+  .blog {
+    width: 50% !important;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -222,6 +240,19 @@ section {
   }
   .btn_menu {
     display: block !important;
+  }
+  .footer_nav,
+  .social,
+  .location,
+  .text_widget {
+    width: 50% !important;
+    padding-bottom: 25px;
+    padding-right: 0px !important;
+  }
+  .footer_nav,
+  .location {
+    clear: both;
+    padding-right: 25px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -258,6 +289,21 @@ section {
   .article {
     width: 100% !important;
     margin-bottom: 25px;
+  }
+  .company,
+  .testimonials,
+  .blog {
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .footer_nav,
+  .social,
+  .location,
+  .text_widget {
+    width: 100% !important;
+    padding-right: 0px !important;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -337,6 +383,7 @@ section {
   position: absolute;
   top: 50%;
   right: 20px;
+  cursor: pointer;
 }
 .container_bg {
   background-color: #e6e6e6;
@@ -457,12 +504,12 @@ section {
 }
 .company,
 .testimonials {
-  width: 350px;
+  width: 35%;
   float: left;
   padding-right: 50px;
 }
 .blog {
-  width: 260px;
+  width: 30%;
   float: left;
 }
 .blog_title,
@@ -510,9 +557,17 @@ section {
 }
 .search_bg {
   background-color: #1f1f1f;
-  height: 56px;
+  height: auto;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+}
+.search_bg:after {
+  display: table;
+  content: " ";
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 .search {
   float: left;
@@ -587,7 +642,8 @@ section {
   background-color: #3c3c3c;
   padding-top: 45px;
   padding-bottom: 50px;
-  height: 294px;
+  min-height: 294px;
+  height: auto;
 }
 .footer:after {
   display: table;
@@ -605,7 +661,7 @@ section {
 }
 .footer_nav {
   float: left;
-  width: 195px;
+  width: 20%;
 }
 .footer_nav_list li a {
   color: #c0c0c0;
@@ -614,8 +670,8 @@ section {
 }
 .social {
   float: left;
-  width: 285px;
-  padding-right: 100px;
+  width: 30%;
+  padding-right: 30px;
 }
 .social_list {
   padding-top: 25px;
@@ -650,7 +706,7 @@ section {
 }
 .location {
   float: left;
-  width: 240px;
+  width: 25%;
   padding-right: 60px;
 }
 .location span {
@@ -662,7 +718,7 @@ section {
 }
 .text_widget {
   float: left;
-  width: 240px;
+  width: 25%;
 }
 .footer_copy {
   clear: both;
